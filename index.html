@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MEMORY CUBE</title>
+  <meta name="description" content="Play this amazing memory game inside a cube. Find the pair of the cards that are hidden in the different faces of the cube.">
+  <link rel="stylesheet" href="css/app.css"></head>
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/mc-128.png">
+
+    <link href="img/apple-touch-startup-image/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+    <link href="img/apple-touch-startup-image/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="img/apple-touch-startup-image/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+    <link href="img/apple-touch-startup-image/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image">
+    <link href="img/apple-touch-startup-image/apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="img/apple-touch-startup-image/apple-touch-startup-image-1496x2048.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<body>
+<div id="portrait">
+  <div class="chrono" data-seconds=""></div>
+  <div class="wrapper">
+    <div data-goto="0" class="turnLink inTop icon-arrow-down"></div>
+    <div id="container" class="startAnimation">
+      <div id="cube" class="show-back">
+        <div class="cubeFace front">
+          <h1>MEMORY CUBE</h1>
+          <a href="#" class="startGame">Play</a>
+        </div>
+        <div class="cubeFace top"></div>
+        <div class="cubeFace bottom"></div>
+        <div class="cubeFace left"></div>
+        <div class="cubeFace right"></div>
+        <div class="cubeFace back"></div>
+      </div>
+    </div>
+    <div data-goto="1" class="turnLink inBottom icon-arrow-up"></div>
+  </div>
+  <div class="icon-cog"></div>
+  <div id="appMenu">
+    <div class="icon-cog"> Back to the cube</div>
+    <div class="contentAppMenu">
+      <a href="#" class="menuToLevels">Go To Levels</a>
+      <h2>HOW TO PLAY</h2>
+      <p>Find the pair of each card hidden in the faces of the cube. Use your memory to remember the location of each card.</p>
+      <p>Navigate through the diferent cube faces clicking or swiping from the top or the bottom of the cube.</p>
+      <p>Click or Tap in the cards to flip them and show his content.</p>
+      <p>Double click or Double tap in a card to select it. Do it again in another card to compare the two cards.</p>
+      <p>If you want deselect a previously selected card, Double click or Double tap in it.</p>
+      <!--<h2>IMPORT / EXPORT</h2>
+      <p>Your unlocked leves and scores are stored in your browser memory. If you want to play in another browser or computer / mobile tou can copy your levels data from the fiel EXPORT and paste it in the field IMPORT at any time</p>
+      <strong>EXPORT</strong>
+      <input />
+      <strong>IMPORT</strong>
+      <input />-->
+      <h2>INSTALL THE APP</h2>
+      <p>asd</p>
+      <h2>ABOUT</h2>
+      <p><strong>CUBE MEMORY</strong> is a web game made by <a href="http://jesus.perezpaz.es" target="_blank">tx2z</a> in HTML, CSS & JS. It works in all modern browsers, mobiles and tablets that support javascript and CSS3</p>
+      <p>If you find an error or bug, know a way to improve the game, want to create or have an idea for a new level, or you simply want to say "hello", you can do it at <a href="mailto:tx2z@caosmental.com">tx2z@caosmental.com</a>.</p>
+    </div>
+  </div>
+</div>
+<div id="landscape">
+  <div class="icon-spinner">
+    <br />Please, put your device in portrait mode.
+  </div>
+</div>
+<!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+<script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+</body>
+</html>

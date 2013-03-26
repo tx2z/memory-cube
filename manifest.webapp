@@ -1,0 +1,23 @@
+{
+  "version": "0.1",
+  "name": "Memory Cube",
+  "description": "Play this amazing memory game inside a cube. Find the pair of the cards that are hidden in the different faces of the cube.",
+  "launch_path": "/",
+  "icons": {
+    "16":  "/img/icons/mc-16.png",
+    "48":  "/img/icons/mc-48.png",
+    "128": "/img/icons/mc-128.png"
+  },
+  "developer": {
+    "name": "tx2z",
+    "url": "http://jesus.perezpaz.es"
+  },
+  "installs_allowed_from": ["*"],
+  "appcache_path": "/cache.manifest",
+  "locales": {
+    "es": {
+      "description": "Juega a este impresionante juego de memoria dentro de un cubo. Encuentra la pareja de todas las fichas que se esconden en las diferentes caras del cubo."
+    }
+  },
+  "default_locale": "en"
+}
