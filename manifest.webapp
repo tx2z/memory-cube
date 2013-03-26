@@ -2,7 +2,7 @@
   "version": "0.1",
   "name": "Memory Cube",
   "description": "Play this amazing memory game inside a cube. Find the pair of the cards that are hidden in the different faces of the cube.",
-  "launch_path": "http://tx2z.github.com/memory-cube/",
+  "launch_path": "/memory-cube/",
   "fullscreen": "true",
   "orientation": ["portrait"],
   "icons": {
