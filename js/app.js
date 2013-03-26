@@ -1,9 +1,4 @@
-define(function(require) {
-
-    var $ = require('zepto');
-
-    // load touchable.js
-    require('touchable');
+(function($) {
 
     // Shuffle an Array
     function shuffle(o) {
@@ -426,5 +421,4 @@ define(function(require) {
        e.preventDefault();
     });
 
-});
-
+})(window.Zepto);

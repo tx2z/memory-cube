@@ -10,9 +10,7 @@ You can play it at http://caosmental.com/games/memory-cube/
 It uses:
 --------
 
-- mortar-app-stub: https://github.com/mozilla/mortar-app-stub that contains
-	- require.js: http://requirejs.org/
-	- zepto.js: http://zeptojs.com/
+- zepto.js: http://zeptojs.com/
 - touchable.js: https://github.com/dotmaster/Touchable-jQuery-Plugin
 - sass: http://sass-lang.com/
 
