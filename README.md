@@ -5,12 +5,14 @@ Memory cube is a memory game inside a 3D cube made in JS, HTML & CSS. It works i
 
 It was created in first instance for the Firefox Apps Days of Paris (25/01/2013).
 
+You can play it at http://caosmental.com/games/memory-cube/
+
 It uses:
 --------
 
-- mortar-app-stub: https://github.com/mozilla/mortar-app-stub
-	require.js: http://requirejs.org/
-	zepto.js: http://zeptojs.com/
+- mortar-app-stub: https://github.com/mozilla/mortar-app-stub that contains
+	- require.js: http://requirejs.org/
+	- zepto.js: http://zeptojs.com/
 
 - touchable.js: https://github.com/dotmaster/Touchable-jQuery-Plugin
 - sass: http://sass-lang.com/
