@@ -6,9 +6,9 @@
   "fullscreen": "true",
   "orientation": ["portrait"],
   "icons": {
-    "16":  "/img/icons/mc-16.png",
-    "48":  "/img/icons/mc-48.png",
-    "128": "/img/icons/mc-128.png"
+    "16":  "/memory-cube/img/icons/mc-16.png",
+    "48":  "/memory-cube/img/icons/mc-48.png",
+    "128": "/memory-cube/img/icons/mc-128.png"
   },
   "developer": {
     "name": "tx2z",
