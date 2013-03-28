@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 0.2
+# Version 0.3
 index.html
 css/app.css
 levels/maths-subtractions/img-5-1.png
@@ -59,7 +59,6 @@ levels/colors/img-5-2.png
 levels/colors/img-2-1.png
 levels/colors/img-3-2.png
 levels/colors/img-7-1.png
-levels/colors/card.psd
 levels/colors/img-1-1.png
 levels/colors/img-8-1.png
 levels/colors/img-1-2.png
@@ -71,7 +70,6 @@ levels/colors/img-4-1.png
 levels/colors/img-4-2.png
 levels/colors/img-8-2.png
 levels/colors/img-7-2.png
-levels/colors/level-icon.psd
 levels/maths-sums/img-5-1.png
 levels/maths-sums/level-icon.png
 levels/maths-sums/img-5-2.png
@@ -80,7 +78,6 @@ levels/maths-sums/img-3-2.png
 levels/maths-sums/img-7-1.png
 levels/maths-sums/img-1-1.png
 levels/maths-sums/img-8-1.png
-levels/maths-sums/cards.psd
 levels/maths-sums/img-1-2.png
 levels/maths-sums/img-2-2.png
 levels/maths-sums/img-3-1.png
@@ -90,7 +87,6 @@ levels/maths-sums/img-4-1.png
 levels/maths-sums/img-4-2.png
 levels/maths-sums/img-8-2.png
 levels/maths-sums/img-7-2.png
-levels/maths-sums/level-icon.psd
 levels/colors-names/img-5-1.png
 levels/colors-names/level-icon.png
 levels/colors-names/img-5-2.png
@@ -111,7 +107,6 @@ levels/colors-names/img-7-2.png
 levels/world-monuments/img-5-1.png
 levels/world-monuments/level-icon.png
 levels/world-monuments/img-5-2.png
-levels/world-monuments/monuments.psd
 levels/world-monuments/img-2-1.png
 levels/world-monuments/img-3-2.png
 levels/world-monuments/img-7-1.png
@@ -160,7 +155,6 @@ levels/cards/img-4-1.png
 levels/cards/img-4-2.png
 levels/cards/img-8-2.png
 levels/cards/img-7-2.png
-levels/cards/level-icon.psd
 levels/cards3/img-5-1.png
 levels/cards3/level-icon.png
 levels/cards3/img-5-2.png
@@ -247,7 +241,6 @@ levels/colors-names2/img-4-2.png
 levels/colors-names2/img-8-2.png
 levels/colors-names2/img-7-2.png
 levels/world-flags/img-5-1.png
-levels/world-flags/flags.psd
 levels/world-flags/level-icon.png
 levels/world-flags/img-5-2.png
 levels/world-flags/img-2-1.png
