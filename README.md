@@ -22,7 +22,7 @@ It don't work in any version of IE because the lack of support of the CSS rule "
 
 To Do
 -----
-- Add import / export level status and score
-X Add cache.manifest to play offline
-- Add instructions to install the game in the diferent devices
-- Add more levels :)
+- [ ] Add import / export level status and score
+- [x] Add cache.manifest to play offline
+- [ ] Add instructions to install the game in the diferent devices
+- [ ] Add more levels :)
