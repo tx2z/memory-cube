@@ -3,7 +3,7 @@
   "name": "Memory Cube",
   "description": "Play this amazing memory game inside a cube. Find the pair of the cards that are hidden in the different faces of the cube.",
   "launch_path": "/memory-cube/",
-  "appcache_path": "/memory-cube/cache.manifest"
+  "appcache_path": "/memory-cube/cache.manifest",
   "fullscreen": "true",
   "orientation": ["portrait"],
   "icons": {
