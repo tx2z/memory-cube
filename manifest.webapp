@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.3",
   "name": "Memory Cube",
   "description": "Play this amazing memory game inside a cube. Find the pair of the cards that are hidden in the different faces of the cube.",
   "launch_path": "/memory-cube/",
