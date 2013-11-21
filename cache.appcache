@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Version 0.5
+# Version 0.6
 css/app.css
 levels/maths-subtractions/img-5-1.png
 levels/maths-subtractions/level-icon.png
@@ -274,8 +274,8 @@ levels/colors-double/img-4-2.png
 levels/colors-double/img-8-2.png
 levels/colors-double/img-7-2.png
 js/zepto.min.js
-js/touchable.js
-js/app.js
+js/touchable.min.js
+js/app.min.js
 img/icons/mc-128.png
 img/icons/mc-16.png
 img/icons/mc-48.png
