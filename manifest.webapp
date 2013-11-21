@@ -1,8 +1,8 @@
 {
-  "version": "0.3",
+  "version": "0.4",
   "name": "Memory Cube",
   "description": "Play this amazing memory game inside a cube. Find the pair of the cards that are hidden in the different faces of the cube.",
-  "launch_path": "/memory-cube/index.html",
+  "launch_path": "/memory-cube/",
   "appcache_path": "/memory-cube/cache.appcache",
   "fullscreen": "true",
   "orientation": ["portrait"],
