@@ -56,7 +56,7 @@ html, body {
    overflow: hidden;
 }
 html {
-    
+
 }
 
 /* FONT FACE */
@@ -208,6 +208,7 @@ a.startGame {
     @include res(42px) { font-size: $px; }
     margin: 0 auto;
     text-shadow: none;
+    visibility: hidden;
     z-index: 0;
 }
 .turnLink.inTop, .turnLink.inBottom {
@@ -272,19 +273,19 @@ a.startGame {
 }
 
 #cube .front {
-    background: hsla(153, 36%, 62%, 0.5 ); 
+    background: hsla(153, 36%, 62%, 0.5 );
 }
 #cube .back {
     background: hsla(43, 95%, 57%, 0.5 );
 }
-#cube .top { 
+#cube .top {
     background: hsla(74, 68%, 41%, 0.5 );
 }
-#cube .bottom { 
+#cube .bottom {
     background: hsla(219, 58%, 48%,  0.5 );
 }
 
-#cube .right, #cube .left  { 
+#cube .right, #cube .left  {
     background-color: #333;
     background-image: url('../img/logo.png');
     background-position: center center;
@@ -384,13 +385,13 @@ a.startGame {
             transform: rotateX( -180deg );
 }
 .flip .card.select {
-    box-shadow: 0 0 5px #fff, 
-                0 0 5px #fff, 
-                0 0 7px #fff, 
-                0 0 10px #fff, 
-                0 0 15px #fff, 
-                0 0 20px #fff, 
-                0 0 25px #fff, 
+    box-shadow: 0 0 5px #fff,
+                0 0 5px #fff,
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 15px #fff,
+                0 0 20px #fff,
+                0 0 25px #fff,
                 0 0 37px #fff;
 }
 
@@ -414,13 +415,13 @@ a.startGame {
     letter-spacing: 5px;
     margin: 190px 0 0;
     text-align: center;
-    text-shadow: 0 0 5px #fff, 
-                 0 0 10px #fff, 
-                 0 0 15px red, 
-                 0 0 20px red, 
-                 0 0 30px red, 
-                 0 0 40px red, 
-                 0 0 50px red, 
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px red,
+                 0 0 20px red,
+                 0 0 30px red,
+                 0 0 40px red,
+                 0 0 50px red,
                  0 0 75px red; }
     @media screen and (max-width: 495px) {
     .gameFinished h1 {
@@ -446,13 +447,13 @@ a.startGame {
     @include res(700px) { line-height: $px; }
     position: absolute;
     text-align: center;
-    text-shadow: 0 0 5px #fff, 
-                 0 0 10px #fff, 
-                 0 0 15px red, 
-                 0 0 20px red, 
-                 0 0 30px red, 
-                 0 0 40px red, 
-                 0 0 50px red, 
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px red,
+                 0 0 20px red,
+                 0 0 30px red,
+                 0 0 40px red,
+                 0 0 50px red,
                  0 0 75px red;
     top: -100%;
     -webkit-transition: 0.5s;
@@ -482,10 +483,10 @@ a.startGame {
     @include transform(180deg, 200px)
 }
 /*
-#container.index #cube.show-bottom .bottom { 
+#container.index #cube.show-bottom .bottom {
     background: hsla( 219, 58%, 48%,  0.9 );
 }
-#container.index #cube.show-top .top { 
+#container.index #cube.show-top .top {
     background: hsla( 74, 68%, 41%, 0.9 );
 }
 */
@@ -539,26 +540,26 @@ a.startGame {
 }
 @-webkit-keyframes moveLevels {
     0% {
-        -webkit-background-size: 80% auto;      
+        -webkit-background-size: 80% auto;
     }
     100% {
-        -webkit-background-size: 90% auto;      
+        -webkit-background-size: 90% auto;
     }
 }
 @-moz-keyframes moveLevels {
     0% {
-        -moz-background-size: 80% auto;      
+        -moz-background-size: 80% auto;
     }
     100% {
-        -moz-background-size: 90% auto;      
+        -moz-background-size: 90% auto;
     }
 }
 @keyframes moveLevels {
     0% {
-        background-size: 80% auto;      
+        background-size: 80% auto;
     }
     100% {
-        background-size: 90% auto;      
+        background-size: 90% auto;
     }
 }
 
