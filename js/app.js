@@ -25,6 +25,10 @@
 
     // Move cube
     function movecube() {
+
+        // Show arrows to move cube
+        $('.turnLink').css('visibility', 'visible');
+
         var onfront  = ['top', 'bottom']
         var ontop    = ['back', 'front']
         var onback   = ['bottom', 'top']
@@ -77,20 +81,24 @@
     var lateralCubeClass;
     function openLateral() {
         if($('#container').hasClass('game')) {
-           stopTimer(); 
+           stopTimer();
         }
         $('#appMenu').addClass('open');
-        lateralCubeClass = $('#cube').attr('class');
-        $('#container').addClass('startAnimation');
-        $('#cube').attr('class', 'show-back');
+        if(!$('#container').hasClass('index')) {
+            lateralCubeClass = $('#cube').attr('class');
+            $('#container').addClass('startAnimation');
+            $('#cube').attr('class', 'show-back');
+        }
     }
     function closeLateral(dontStopTimer) {
         if($('#container').hasClass('game') && dontStopTimer) {
            startTimer(false);
         }
         $('#appMenu').removeClass('open');
-        $('#container').removeClass('startAnimation');
-        $('#cube').attr('class', lateralCubeClass);
+        if(!$('#container').hasClass('index')) {
+            $('#container').removeClass('startAnimation');
+            $('#cube').attr('class', lateralCubeClass);
+        }
     }
 
     // Levels Cube
@@ -170,7 +178,7 @@
                             levelStars = levelStars + '<span class="icon-star"></span>';
                         }
                     }
-                    
+
                     var levelIcons = '<div class="levelScore">' + levelStars + '</div>';
                     var faceClass = 'readyToPlay';
                 } else {
@@ -189,7 +197,7 @@
 
 
         $t=$('.readyToPlay, .newToPlay').Touchable();
-        
+
         // One click / tap
         $t.on('touchableend', function(e, touch){
             startGame($(this).attr('data-level'));
@@ -290,7 +298,7 @@
         var cubeFaces = ['front','bottom','back','top'];
         var cubeCount = 0;
         var storeCardValue = 'empty';
-        
+
         shuffle(cards);
         for (var i=0;i<cards.length;i++) {
             if (i%4==0) {
@@ -320,16 +328,16 @@
 
         function doubleClick(actualCart) {
             $('.card').removeClass('flipped'); // Flip/hide all cards
-            if (actualCart.hasClass('select')) { 
+            if (actualCart.hasClass('select')) {
             // Cart is actually selected ->deselect it
                 storeCardValue = 'empty';
-                actualCart.removeClass('select'); 
-            } else { 
+                actualCart.removeClass('select');
+            } else {
             // Select cart
                 var cardValue = actualCart.data('content');
-                if (storeCardValue == cardValue ) { 
+                if (storeCardValue == cardValue ) {
                 // Actual cart value is equal to stored cart value -> deselect carts empty stored cart value and flip cards
-                    $('.card').removeClass('select'); 
+                    $('.card').removeClass('select');
                     storeCardValue = 'empty';
                     $('div[data-content="' + cardValue +'"]').addClass('solved');
                     // Check if all cards are solved
@@ -345,12 +353,12 @@
                         }
                         endGame(level, endGameScore);
                     }
-                } else { 
+                } else {
                 //Actual card value is not  equal to stored cart value
-                    actualCart.addClass('select'); 
+                    actualCart.addClass('select');
                     if (storeCardValue == 'empty') {
                     // There is no other card selected -> Mark it and store value
-                        storeCardValue = cardValue; 
+                        storeCardValue = cardValue;
                     } else {
                     // There is other card selected -> Fail! -> Remove all selected cards
                         var errorMessages = ['FAIL!','MAL','NO,NO!','NO WAY','TRY AGAIN','WRONG','TIC TOC','ERROR','NOPE' ]
@@ -360,7 +368,7 @@
                         setTimeout(function() {
                             $('.message').removeClass('showMessage');
                         }, 1500);
-                        $('.card').removeClass('select'); 
+                        $('.card').removeClass('select');
                         storeCardValue = 'empty';
                     }
 
@@ -371,7 +379,7 @@
         // Define clicks on cards
         $t=$('.face').Touchable();
         var isDouble = false;
-        
+
         // Double click / tap
         $t.on('doubleTap', function(e, touch){
             isDouble = true;
@@ -383,7 +391,7 @@
             }, 600);
             e.preventDefault();
         });
-        
+
         // One click / tap
         $t.on('touchableend', function(e, touch){
             setTimeout(function() { // Wait for double tap
@@ -393,7 +401,7 @@
                     oneClick(actualCart);
                 }
             }, 300);
-            
+
         });
 
         movecube();
@@ -421,21 +429,22 @@
         return false;
     });
 
+    /*
     $(function() {
-
         setTimeout(function() {
             $('#cube').attr('class', 'show-front');
         }, 1000);
         setTimeout(function() {
             $('#container').removeClass('startAnimation').addClass('index');
         }, 1500);
-
         movecube();
-
     });
+    */
 
+    /*
     document.body.addEventListener('touchmove', function (e) {
        e.preventDefault();
     });
+    */
 
 })(window.Zepto);
