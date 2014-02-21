@@ -29,10 +29,10 @@
         // Show arrows to move cube
         $('.turnLink').css('visibility', 'visible');
 
-        var onfront  = ['top', 'bottom']
-        var ontop    = ['back', 'front']
-        var onback   = ['bottom', 'top']
-        var onbottom = ['front', 'back']
+        var onfront  = ['top', 'bottom'];
+        var ontop    = ['back', 'front'];
+        var onback   = ['bottom', 'top'];
+        var onbottom = ['front', 'back'];
 
         var turnCubeLinks = onfront;
         $bottom=$('.turnLink').Touchable();
@@ -162,13 +162,13 @@
         var cubeCount = 0;
 
         for (var i=0;i<levels.length;i++) {
-            if (i%4==0) {
+            if (i%4===0) {
                 $('#cube').append('<div class="cubeFace ' + cubeFaces[cubeCount] + '"></div>');
-                cubeCount ++
+                cubeCount ++;
             }
 
             if (levels[i][1]) {
-                if (levels[i][2] != 0) {
+                if (levels[i][2] !== 0) {
                     var levelStars = '';
 
                     for (var x=1;x<=3;x++) {
@@ -230,7 +230,7 @@
             var updatedLevels = JSON.parse(localStorage.getItem('levelsStored'));
 
             for( var i = 0; i < updatedLevels.length; i++ ) {
-                if ($.inArray(level, updatedLevels[i]) == 0) {
+                if ($.inArray(level, updatedLevels[i]) === 0) {
 
                     // Update level score
                     if (updatedLevels[i][2] < score){
@@ -301,9 +301,9 @@
 
         shuffle(cards);
         for (var i=0;i<cards.length;i++) {
-            if (i%4==0) {
+            if (i%4===0) {
                 $('#cube').append('<div class="cubeFace ' + cubeFaces[cubeCount] + '"></div>');
-                cubeCount ++
+                cubeCount ++;
             }
             $('.cubeFace').last().append('<div class="flip"><div class="card" id="card' + i + '" data-content="' + cards[i][0] + '"><div class="face fontFace"></div><img src="levels/' + level + '/' + cards[i][1] + '.png" alt="card' + cards[i][1] + '" class="face backFace" /></div></div>');
         }
@@ -361,7 +361,7 @@
                         storeCardValue = cardValue;
                     } else {
                     // There is other card selected -> Fail! -> Remove all selected cards
-                        var errorMessages = ['FAIL!','MAL','NO,NO!','NO WAY','TRY AGAIN','WRONG','TIC TOC','ERROR','NOPE' ]
+                        var errorMessages = ['FAIL!','MAL','NO,NO!','NO WAY','TRY AGAIN','WRONG','TIC TOC','ERROR','NOPE' ];
                         shuffle(errorMessages);
                         $('.message').html(errorMessages[0]);
                         $('.message').addClass('showMessage');
@@ -395,7 +395,7 @@
         // One click / tap
         $t.on('touchableend', function(e, touch){
             setTimeout(function() { // Wait for double tap
-                if(isDouble != true){
+                if(isDouble !== true){
                     var touchElem = touch.elem.parentElement.id;
                     var actualCart = $('#' + touchElem);
                     oneClick(actualCart);
