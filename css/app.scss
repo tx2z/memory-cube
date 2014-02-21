@@ -139,6 +139,20 @@ body {
     text-shadow: 0px 0px 2px hsla(0, 0%, 100%, 1);
 }
 
+/* Center Cube */
+#portrait {
+    height: 100%
+}
+.table {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+.cell {
+    display:table-cell;
+    vertical-align:middle;
+}
+
 .wrapper {
     margin: 0 auto;
     position: relative;

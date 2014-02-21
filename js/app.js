@@ -220,7 +220,7 @@
             }
         }
 
-        $('#appMenu').append('<div class="gameFinished"><h1>Well Done</h1><p>You have finish "' + level + '" in ' + finalTime + '</p><p class="finishedLevelScore">' + finalScore + '</p><a href="#" class="repeatGame">Play Again</a><a href="#" class="goToLevels">Next Level</a></div>');
+        $('#appMenu').append('<div class="gameFinished"><h1>Well Done</h1><p>You have finished "' + level + '" in ' + finalTime + '</p><p class="finishedLevelScore">' + finalScore + '</p><a href="#" class="repeatGame">Play Again</a><a href="#" class="goToLevels">Next Level</a></div>');
         $('#appMenu .icon-cog, #appMenu .contentAppMenu').css('display','none');
         openLateral();
 
