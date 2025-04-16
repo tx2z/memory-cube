@@ -5,7 +5,7 @@ Memory cube is a memory game inside a 3D cube made in JS, HTML & CSS. It works i
 
 It was created in first instance for the Firefox Apps Days of Paris (25/01/2013).
 
-You can play it at [http://tx2z.github.com/memory-cube/](https://tx2z.github.io/memory-cube/)
+You can play it at [http://tx2z.github.io/memory-cube/](https://tx2z.github.io/memory-cube/)
 
 It uses:
 --------
